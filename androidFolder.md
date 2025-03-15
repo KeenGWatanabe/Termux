@@ -1,4 +1,4 @@
-(Due to technical issues, the search service is temporarily unavailable.)
+
 
 To open a folder from the Android document folder in `code-server` running in Termux or a `proot-distro` environment, you need to ensure that the folder is accessible within the environment where `code-server` is running. Here's how you can do it:
 
@@ -61,4 +61,3 @@ To open a folder from the Android document folder in `code-server` running in Te
 - **Permission Denied**: If you encounter permission issues, ensure Termux has storage access enabled in Android settings.
 - **Folder Not Found**: Double-check the path and ensure `termux-setup-storage` was run successfully.
 
-Let me know if you need further assistance!
