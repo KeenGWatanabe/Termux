@@ -11,3 +11,5 @@ root@localhost: code-server
 to fire up code-server on localhost:8080
 
 Also at root@localhost: install aws cli, and do aws configuration
+
+# github at code-serveg
