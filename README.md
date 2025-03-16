@@ -6,7 +6,7 @@ At Termux level, you can already ssh to EC2;
 Install [proot login Ubuntu](proot.md) for Linux environment for VS code and AWS cli.
 To use at Termux:
 ```
--$ proot-dist-distro ubuntu
+-$ proot-distro login ubuntu
 ```
 # VScode run from Termux>Linux>browser localhost 127.0.0.1
 Install [code-server](code_server.md)
