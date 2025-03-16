@@ -1,4 +1,4 @@
-(Due to technical issues, the search service is temporarily unavailable.)
+
 
 The error `bash: gh: command not found` indicates that the GitHub CLI (`gh`) is not installed in your environment. To use `gh` commands, you need to install the GitHub CLI first. Here's how you can install and set it up in your Termux or `proot-distro` environment:
 
@@ -66,4 +66,3 @@ The error `bash: gh: command not found` indicates that the GitHub CLI (`gh`) is 
 
 ---
 
-Let me know if you need further assistance!

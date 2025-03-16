@@ -22,4 +22,3 @@ To switch back to Termux from a `proot-distro` Ubuntu session, you can simply **
   ```
 - You can have multiple `proot-distro` environments installed (e.g., Ubuntu, Alpine, Debian). Use the `proot-distro list` command to see all installed distributions.
 
-Let me know if you need further clarification!

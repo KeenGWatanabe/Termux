@@ -100,19 +100,16 @@ npm install -g code-server
 ---
 
 ### 6. **Use a Prebuilt Binary (Alternative)**
-                                                    If the above steps don’t work, you can download a prebuilt binary of `code-server` instead of building it from source:
+ If the above steps don’t work, you can download a prebuilt binary of `code-server` instead of building it from source:
 ```bash
     curl -fsSL https://code-server.dev/install.sh | sh
                                                     ```
 
-                                                                                    ---
-
-                                                    ### 7. **Verify Installation**
-                                                    After successfully installing `code-server`, verify it by running:
+### 7. **Verify Installation**
+After successfully installing `code-server`, verify it by running:
 ```bash
 code-server --version
                             ```
-
                 ---
 
 ### 8. **Run `code-server`**
@@ -128,4 +125,3 @@ Access it in your browser at `http://127.0.0.1:8080`.
 - Termux’s environment is not fully compatible with all Node.js packages, especially those requiring native compilation.
 - If you continue to face issues, consider using a **Linux environment** (e.g., UserLAnd or Andronix) or a **remote desktop solution** to run VS Code.
 
-Let me know if you need further assistance! 😊

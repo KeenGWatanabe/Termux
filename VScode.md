@@ -53,17 +53,15 @@ dpkg -i vscode.deb
 apt install -f
 ```
 
-                                                                                 4. **Start the VNC server:**
-                                                                                    ```bash
-                                                                                       vncserver :1 -geometry 1280x720 -depth 24
-                                                                                          ```
-
-                                                                                 5. **Connect to the VNC server:**
-                                                                                 - Use a VNC client app on your Android device (e.g., [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)).
-                                                                                    - Connect to `localhost:1` (or your device's IP address if accessing remotely).
-
-                                                                                 6. **Launch VS Code:**
-                                                                                 Once connected to the VNC session, open a terminal in the desktop environment and run:
+4. **Start the VNC server:**
+```bash
+vncserver :1 -geometry 1280x720 -depth 24
+````
+5. **Connect to the VNC server:**
+    - Use a VNC client app on your Android device (e.g., [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android)).
+    - Connect to `localhost:1` (or your device's IP address if accessing remotely).
+6. **Launch VS Code:**
+   Once connected to the VNC session, open a terminal in the desktop environment and run:
 ```bash
 code
 ```
@@ -77,41 +75,39 @@ If you're using Termux, you can set up an X11 server to run GUI applications lik
    - Install Termux:X11 from F-Droid.
    - In Termux, install the required packages:
       ```bash
-                                                                                 pkg install x11-repo
-                                                                                 pkg install proot-distro
-                                                                                 proot-distro install ubuntu
-                                                                                 proot-distro login ubuntu
-                                                                                 apt update
-                                                                                 apt install wget gpg
-                                                                                 ```
+      pkg install x11-repo
+      pkg install proot-distro
+      proot-distro install ubuntu
+      proot-distro login ubuntu
+      apt update
+      apt install wget gpg
+      ```
 
-                                                                                 2. **Install VS Code:**
-                                                                                 Follow the same steps as in Option 2 to install VS Code.
+2. **Install VS Code:**
+  Follow the same steps as in Option 2 to install VS Code.
 
-                                                                                                                                                             3. **Start the X11 server:**
-                                                                                                                                                                - Open Termux:X11 and start the X11 server.
-                                                                                                                                                                   - In Termux, set the display variable:
-                                                                                                                                                            ```bash
-                                                                                                                                                                  export DISPLAY=:0
+                                                                                             3. **Start the X11 server:**
+                                                                                              - Open Termux:X11 and start the X11 server.
+                                                                                              - In Termux, set the display variable:
+                                                                                              ```bash
+                                                                                              export DISPLAY=:0
                                                                                                                                                                         ```
-
-                                                                                 4. **Launch VS Code:**
-                                                                                                                                                               Run `code` in the terminal, and it should open in the X11 environment.
-
-                                                                                                                                                                  ---
-
-                                                                                                                                                                  ### **Option 4: Use a Remote Development Setup**
-                                                                                                                                                                  If you have access to a PC or server, you can set up VS Code there and connect to it remotely from your Android device.
-
-                                                                                                                                                                  1. **Install VS Code on your PC/server.**
-                                                                                                                                                                  2. **Install the Remote - SSH extension in VS Code.**
-                                                                                                                                                                  3. **Use an SSH client on Android (e.g., Termux) to connect to your PC/server.**
-                                                                                                                                                                  4. **Access VS Code remotely.**
+4. **Launch VS Code:**
+                                                                                              Run `code` in the terminal, and it should open in the X11 environment.
 
                                                                                                                                                                   ---
 
-                                                                                                                                                                  ### **Limitations**
-                                                                                                                                                                  - Performance may be slow depending on your device's hardware.
-                                                                                                                                                                  - Some extensions or features of VS Code may not work properly in these setups.
+                                                                                              ### **Option 4: Use a Remote Development Setup**
+                                                                                              If you have access to a PC or server, you can set up VS Code there and connect to it remotely from your Android device.
 
-                                                                                 Let me know if you need further assistance!
+                                                                                              1. **Install VS Code on your PC/server.**
+                                                                                              2. **Install the Remote - SSH extension in VS Code.**
+                                                                                              3. **Use an SSH client on Android (e.g., Termux) to connect to your PC/server.**
+                                                                                              4. **Access VS Code remotely.**
+
+                                                                                                                                                                  ---
+
+                                                                                              ### **Limitations**
+                                                                                              - Performance may be slow depending on your device's hardware.
+                                                                                              - Some extensions or features of VS Code may not work properly in these setups.
+
